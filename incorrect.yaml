@@ -1,0 +1,15 @@
+this is a test yaml !! yay!!!
+kind: Persistent　VolumeClaim
+apiVersion: v1
+meta--data:
+
+  name: natsumi-sakamoto-pvc
+  names-pace: natsumi-sakamoto-pipeline-from-scratch
+spec:
+  accessModes:
+  
+    - ReadWriteOnce
+  resources:
+  
+    reque　sts:
+      storage: 1000000Gi
