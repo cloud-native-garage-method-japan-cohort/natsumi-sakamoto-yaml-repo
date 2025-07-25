@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1
+kind: PipelineRun
+metadata:
+  generateName: natsumi-sakamoto-pipeline-from-scratch-pipeline-run-
+spec:
+  pipelineRef:
+    name: natsumi-sakamoto-pipeline-from-scratch-pipeline
+  workspaces:
+    - name: pipeline-shared-data
+      persistentVolumeClaim:
+        claimName: natsumi-sakamoto-pvc
